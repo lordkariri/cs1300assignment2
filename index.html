@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 2</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <h3>Menu</h3>
+        <ul>
+            <li><a href="assignment2.html">Home</a></li>
+            <li><a href="assignment2.html">About</a></li>
+            <li><a href="index.html">Assignment 2</a></li>
+        </ul>
+        <button id="close-sidebar">Close</button>
+    </div>
+
+    <!-- Button to toggle sidebar -->
+    <div id="sidebar-toggle">☰</div>
+
+    
+
+ 
+    <!-- Title Section -->
+    <div id="title">
+        <h1>
+            Pop-ups as Accessible Components!<button id="action-button">click me for a demonstration</button>
+        </h1>
+    </div>
+
+    <div id="left-images">
+        <img src="popups/person1.png" alt="Image 1">
+        <img src="popups/person2.png" alt="Image 2">
+        <img src="popups/person3.png" alt="Image 3">
+        <img src="popups/person4.png" alt="Image 4">
+        <img src="popups/person5.png" alt="Image 5">
+        <img src="popups/person6.png" alt="Image 6">
+       
+    </div>
+
+   
+
+    <!-- Skills Section -->
+    <div id="skills-section">
+        <h2>what's already out there? (part 1)</h2>
+        <div id="skill-tabs">
+            <span class="skill-tab active" data-category="mouse">🖱 mouse/touchpad</span>
+            <span class="skill-tab" data-category="keyboard">⌨️ keyboard navigation</span>
+            <span class="skill-tab" data-category="mobile">📱 mobile interaction</span>
+        </div>
+
+        <!-- Skill Content Grid -->
+        <div id="skills-grid">
+            <div class="skill-box" data-category="mouse">
+                <h3>google drive (file deletion)</h3>
+    
+            </div>
+            <div class="skill-box" data-category="mouse">
+                <h3>linkedIn (unfollow Page)</h3>
+    
+            </div>
+            <div class="skill-box" data-category="mouse">
+                <h3>instagram (block user)</h3>
+            </div>
+            <div class="skill-box" data-category="mouse">
+                <img id="google-img" src="photo/google_drive.png" alt="google pop-up Image">
+            </div>
+            <div class="skill-box" data-category="mouse">
+                <img id="google-img" src="photo/linkeden.png" alt="linkeden pop-up Image">
+            </div>
+            <div class="skill-box" data-category="mouse">
+                <img id="google-img" src="photo/instagram.png" alt="instagram pop-up Image">
+            </div>
+            <div class="skill-box" data-category="mouse">
+                <p>✅ Click "Move to Trash/Cancel" to confirm/dismiss.<br>
+                    ❌ Clicking outside does not close popup.<br>
+                    ❌ No hover feedback on buttons.</p>
+            </div>
+
+            <div class="skill-box" data-category="mouse">
+        
+                <p>✅ Click "Unfollow/Cancel" to confirm/dismiss.<br>
+                    ❌ Clicking outside does not close popup.<br>
+                    ❌ No hover feedback.</p>
+            </div>
+
+            <div class="skill-box" data-category="mouse">
+                
+                <p>✅ Click "Block/Cancel" to confirm/dismiss.<br>
+                    ❌ Clicking outside does not close popup.<br>
+                    ✅ Hover effect slightly changes button appearance.</p>
+            </div>
+            <div class="skill-box" data-category="keyboard" style="display: none;">
+                <h3>google drive (file deletion)</h3>
+    
+            </div>
+            <div class="skill-box" data-category="keyboard" style="display: none;">
+                <h3>linkedIn (unfollow Page)</h3>
+    
+            </div>
+            <div class="skill-box" data-category="keyboard"style="display: none;" >
+                <h3>instagram (block user)</h3>
+    
+            </div>
+            <div class="skill-box" data-category="keyboard" style="display: none;">
+                <img id="google-img" src="photo/google_drive.png" alt="google pop-up Image">
+            </div>
+            <div class="skill-box" data-category="keyboard" style="display: none;">
+                <img id="google-img" src="photo/linkeden.png" alt="linkeden pop-up Image">
+            </div>
+            <div class="skill-box" data-category="keyboard" style="display: none;">
+                <img id="google-img" src="photo/instagram.png" alt="instagram pop-up Image">
+            </div>
+            <div class="skill-box" data-category="keyboard" style="display: none;">
+       
+                <p>✅ Tab moves focus between buttons.<br>
+                    ✅ Enter confirms selection.<br>
+                    ✅ Esc closes popup.<br>
+                    ❌ Weak or no visible focus indicator.</p>
+            </div>
+
+            <div class="skill-box" data-category="keyboard" style="display: none;">
+         
+                <p>✅ Tab moves focus logically (Unfollow → Cancel → Close).<br>
+                    ✅ Enter selects button.<br>
+                    ✅ Esc closes popup.<br>
+                    ❌ No strong focus highlight.</p>
+            </div>
+
+            <div class="skill-box" data-category="keyboard" style="display: none;">
+      
+                <p>✅ Tab moves focus logically (Block → Cancel).<br>
+                    ✅ Enter selects button.<br>
+                    ✅ Esc closes popup.<br>
+                    ❌ No strong focus highlight.</p>
+            </div>
+            <div class="skill-box" data-category="mobile"style="display: none;">
+                <h3>google drive (file deletion)</h3>
+    
+            </div>
+            <div class="skill-box" data-category="mobile"style="display: none;">
+                <h3>linkedIn (unfollow Page)</h3>
+    
+            </div>
+            <div class="skill-box" data-category="mobile"style="display: none;">
+                <h3>instagram (block user)</h3>
+    
+            </div>
+            <div class="skill-box" data-category="mobile" style="display: none;">
+                <img id="google-img" src="photo/google_drive.png" alt="google pop-up Image">
+            </div>
+            <div class="skill-box" data-category="mobile" style="display: none;">
+                <img id="google-img" src="photo/linkeden.png" alt="linkeden pop-up Image">
+            </div>
+            <div class="skill-box" data-category="mobile" style="display: none;">
+                <img id="google-img" src="photo/instagram.png" alt="instagram pop-up Image">
+            </div>
+            <div class="skill-box" data-category="mobile" style="display: none;">
+
+                <p>✅ Popup appears centered.<br>
+                    ✅ Tap OK/Cancel to confirm/dismiss.<br>
+                    ❌ Clicking outside does not close popup.<br>
+                    ✅ Buttons are large & touch-friendly.</p>
+            </div>
+
+            <div class="skill-box" data-category="mobile" style="display: none;">
+                <p>✅ Popup appears centered.<br>
+                    ✅ Tap Unfollow/Cancel to confirm/dismiss.<br>
+                    ❌ Clicking outside does not close popup.<br>
+                    ✅ Buttons are large & touch-friendly.</p>
+            </div>
+
+            <div class="skill-box" data-category="mobile" style="display: none;">
+                <p>✅ Popup appears centered.<br>
+                    ✅ Tap Block/Cancel to confirm/dismiss.<br>
+                    ❌ Clicking outside does not close popup.<br>
+                    ✅ Buttons are large & touch-friendly.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Skills Section 1 -->
+    <div id="skills-section1">
+    <h2>focussing on outputs (part 2)</h2>
+    <div id="skill-tabs1">
+        <span class="skill-tab1 active" data-category="google1">google drive</span>
+        <span class="skill-tab1" data-category="linkedin1">linkedin</span>
+        <span class="skill-tab1" data-category="instagram1">instagram</span>
+    </div>
+
+    <!-- Skill Content Grid 1 -->
+    <div id="skills-grid1">
+        <div class="skill-box1" data-category="google1">
+            <p><strong>Popup Appearance</strong> <br>✅ Instant appearance, no animation.</p>
+        </div>
+
+        <div class="skill-box1" data-category="google1">
+            <p><strong>Focus State</strong><br>❌ No clear focus outline.</p>
+        </div>
+
+        <div class="skill-box1" data-category="google1">
+            <p><strong>Hover State</strong><br>❌ No hover effect.</p>
+        </div>
+        <div class="skill-box1" data-category="google1">
+            <p><strong>Pressed State</strong><br>✅ Button darkens briefly when clicked.</p>
+        </div>
+        <div class="skill-box1" data-category="google1">
+            <p><strong>closing behavior</strong><br>✅ "Esc" key closes popup.</p>
+        </div>
+        <div class="skill-box1" data-category="google1">
+            <p><strong>closing behavior</strong><br>❌ Clicking outside does not close.</p>
+        </div>
+        <div class="skill-box1" data-category="google1">
+            <p><strong>Focus Order</strong><br> ❌ Default tab order, not optimized.</p>
+        </div>
+        <div class="skill-box1" data-category="google1">
+            <p><strong>screen reader feedback</strong><br>✅ Reads popup message.</p>
+        </div>
+        <div class="skill-box1" data-category="google1">
+            <p><strong>screen reader feedback</strong><br>❌ Does not announce selected button.</p>
+        </div>
+        
+        <div class="skill-box1" data-category="linkedin1" style="display: none;">
+            <p><strong>Popup Appearance</strong> <br>✅ Slight slide-in animation.</p>
+        </div>
+
+        <div class="skill-box1" data-category="linkedin1" style="display: none;">
+            <p><strong>Focus State</strong><br>❌ Weak focus highlight.</p>
+        </div>
+
+        <div class="skill-box1" data-category="linkedin1" style="display: none;">
+            <p><strong>Hover State</strong><br>❌ No hover effect.</p>
+        </div>
+        <div class="skill-box1" data-category="linkedin1" style="display: none;">
+            <p><strong>Pressed State</strong><br>✅ Button darkens briefly when clicked.</p>
+        </div>
+        <div class="skill-box1" data-category="linkedin1" style="display: none;">
+            <p><strong>closing behavior</strong><br>✅ "Esc" key closes popup.</p>
+        </div>
+        <div class="skill-box1" data-category="linkedin1"style="display: none;">
+            <p><strong>closing behavior</strong><br>❌ Clicking outside does not close.</p>
+        </div>
+        <div class="skill-box1" data-category="linkedin1"style="display: none;">
+            <p><strong>Focus Order</strong><br>✅ Logical sequence (Unfollow → Cancel → Close).</p>
+        </div>
+        <div class="skill-box1" data-category="linkedin1"style="display: none;">
+            <p><strong>screen reader feedback</strong><br>✅ Reads popup message.</p>
+        </div>
+        <div class="skill-box1" data-category="linkedin1"style="display: none;">
+            <p><strong>screen reader feedback</strong><br>✅ Announces button names when tabbing.</p>
+        </div>
+
+        <div class="skill-box1" data-category="instagram1" style="display: none;">
+            <p><strong>Popup Appearance</strong> <br>✅ Smooth fade-in effect.</p>
+        </div>
+
+        <div class="skill-box1" data-category="instagram1" style="display: none;">
+            <p><strong>Focus State</strong><br>❌ Weak focus highlight.</p>
+        </div>
+
+        <div class="skill-box1" data-category="instagram1" style="display: none;">
+            <p><strong>Hover State</strong><br>✅ Buttons slightly change opacity when hovered.</p>
+        </div>
+        <div class="skill-box1" data-category="instagram1" style="display: none;">
+            <p><strong>Pressed State</strong><br>✅ Button shrinks slightly on press.</p>
+        </div>
+        <div class="skill-box1" data-category="instagram1" style="display: none;">
+            <p><strong>closing behavior</strong><br>✅ "Esc" key closes popup.</p>
+        </div>
+        <div class="skill-box1" data-category="instagram1"style="display: none;">
+            <p><strong>closing behavior</strong><br>❌ Clicking outside does not close.</p>
+        </div>
+        <div class="skill-box1" data-category="instagram1"style="display: none;">
+            <p><strong>Focus Order</strong><br>✅ Logical sequence (Block → Cancel).</p>
+        </div>
+        <div class="skill-box1" data-category="instagram1"style="display: none;">
+            <p><strong>screen reader feedback</strong><br>✅ Reads popup message.</p>
+        </div>
+        <div class="skill-box1" data-category="instagram1"style="display: none;">
+            <p><strong>screen reader feedback</strong><br>❌ Selected button not clearly indicated.</p>
+        </div>
+    </div>
+    <!-- Key Takeaways Section -->
+    <div id="key-takeaways">
+        <h2>Key Takeaways (For Clarity & Accessibility)</h2>
+        <ul>
+            <li><strong>Google Drive & LinkedIn</strong> lack clear focus indicators for keyboard users.</li>
+            <li><strong>Only Instagram</strong> has a hover effect, improving mouse interaction.</li>
+            <li><strong>None</strong> of the popups allow clicking outside to dismiss.</li>
+            <li><strong>Screen readers</strong> work well for messages but don’t always highlight selected buttons properly.</li>
+        </ul>
+    </div>
+
+   <!-- state models - part 3 -->
+<div id="part3section">
+    <h2>state diagrams (part 3)</h2>
+
+    <!-- 2x2 Grid Information Boxes -->
+    <div id="info-grid">
+        <div class="info-box">
+            <h3>mouse user model 🖱️:</h3>
+            <p>Hidden (Default) → Popup is not visible<br>
+                Visible (Active) → Popup appears on screen<br>
+                Hover (Interactive) → Mouse moves over OK/Cancel buttons<br>
+                Pressed (Click/Tap Feedback) → User clicks OK/Cancel<br>
+                Closed (End State) → popup disappears</p>
+        </div>
+        <div class="info-box">
+            <h3>keyboard user model ⌨️:</h3>
+            <p>Hidden (Default) → Popup is not active.<br>
+                Focused (Active) → Popup appears, focus is on the first button<br>
+                Tab Navigation → User presses Tab to move between buttons<br>
+                Pressed (Action Triggered) → Pressing Enter selects a button<br>
+                Closed (End State) → Popup disappears.</p>
+        </div>
+       
+    </div>
+
+    <!-- Two Images Side by Side -->
+    <div id="image-container">
+        <img src="photo/diagram1.png" alt="Diagram 1">
+        <img src="photo/diagram2.png" alt="Diagram 2">
+    </div>
+
+   <!-- New Part 3.5 Section -->
+<div id="redesign-section">
+    <h2>📌 Redesigning the Popup Dialog for Better Usability & Accessibility</h2>
+    
+    <h3 id="redesign-subtitle">Component Being Redesigned: Google Drive’s File Deletion Popup</h3>
+    <p id="redesign-intro">
+        In Google Drive, the file deletion confirmation popup lacks strong focus indicators, hover effects, 
+        and a way to dismiss it by clicking outside. My redesign enhances learnability, efficiency, and accessibility 
+        by making it more intuitive and user-friendly.
+    </p>
+
+    <!-- 2x2 Grid for Before and After States -->
+    <div id="redesign-grid">
+        <div class="redesign-box">
+            <h3>1️⃣ Initial State (Before Any User Interaction)</h3>
+            <p>✅ Popup smoothly fades in for better visual recognition.<br>
+               ✅ Stronger focus indicators help keyboard users navigate efficiently.<br>
+               ✅ Hover feedback makes it clear which buttons are interactive.<br>
+               ✅ ARIA labels improve accessibility for screen readers.</p>
+        </div>
+        <div class="redesign-box">
+            <h3>2️⃣ User Interaction State (During Usage)</h3>
+            <p>✅ Hover effects reinforce memorability and action clarity.<br>
+               ✅ Backspace key allows users to undo an action.<br>
+               ✅ Clicking outside dismisses the popup, reducing frustration.<br>
+               ✅ Improved screen reader support ensures actions are clearly announced.</p>
+        </div>
+    </div>
+
+    <!-- Image Layout: One Large Image on Left, Two Stacked on Right -->
+    <div id="redesign-images">
+        <div class="redesign-left">
+            <img src="photo/diagram5.png" alt="Redesigned Popup - Full View">
+        </div>
+        <div class="redesign-right">
+            <img src="photo/diagram3.png" alt="Popup State 1">
+            <img src="photo/diagram4.png" alt="Popup State 2">
+        </div>
+    </div>
+</div>
+
+        <!-- Part 4: Reflection on Inclusive Design -->
+<div id="part4section">
+    <h2>📝 Part 4: Reflection on Inclusive Design in Popup Dialogs</h2>
+
+    <div class="reflection-box">
+        <p>
+            The original popup dialogs in <strong>Google Drive, LinkedIn, and Instagram</strong> performed well in 
+            <strong>basic usability</strong> by clearly presenting confirmation options. However, they lacked 
+            <strong>strong focus indicators, hover feedback, and alternative closing methods</strong>, making navigation more difficult 
+            for <strong>keyboard and screen reader users</strong>. My redesign prioritizes these <strong>accessibility gaps</strong> by 
+            improving <strong>focus visibility, hover effects, and allowing users to click outside the popup to dismiss it</strong>.
+        </p>
+    </div>
+
+    <div class="reflection-box">
+        <p>
+            One <strong>major accessibility issue</strong> not addressed in the original popups was <strong>the lack of clear screen reader 
+            feedback for button selection</strong>. My design ensures that <strong>screen readers announce the selected button, using ARIA 
+            labels and focus indicators</strong>, making navigation clearer for visually impaired users.
+        </p>
+    </div>
+
+    <div class="reflection-box">
+        <p>
+            <strong>Kat Holmes</strong> defines a <em>"mismatch"</em> as when human diversity is not considered in design, making interfaces 
+            unusable for certain groups. My redesign <strong>resolves this mismatch</strong> by adding multiple ways to interact with the popup 
+            (<strong>better keyboard focus, hover effects, and click-outside-to-dismiss</strong>) so that users with 
+            <strong>limited mobility, low vision, or cognitive impairments</strong> can navigate it more efficiently.
+        </p>
+    </div>
+
+    <div class="reflection-box">
+        <h3>Example 1: Lack of Focus Indicators Hurts Visually Impaired Users</h3>
+        <p>
+            In the original popups, <strong>keyboard users had no way of knowing which button was selected</strong> because there was no 
+            <strong>strong focus outline</strong>. This negatively impacts <strong>users with low vision or screen reader users</strong> who rely on 
+            <strong>visual or audio cues</strong>. My redesign <strong>fixes this by adding a visible focus outline and improving ARIA labels</strong>.
+        </p>
+    </div>
+
+    <div class="reflection-box">
+        <h3>Example 2: Lack of Click-to-Dismiss Affects Users with Motor Impairments</h3>
+        <p>
+            Users with <strong>limited hand mobility</strong> may find it difficult to <strong>precisely click the Cancel button</strong>. 
+            Allowing them to <strong>click anywhere outside the popup to dismiss it</strong> makes it <strong>faster and easier to interact with</strong>.
+        </p>
+    </div>
+
+    <div class="reflection-box">
+        <p>
+            In most UI designs, <strong>mouse and touch interactions are prioritized</strong> over keyboard and screen reader users. This often 
+            results in components that look visually polished but are <strong>difficult to navigate with a keyboard or inaccessible to screen readers</strong>. 
+            This <strong>exclusion disproportionately impacts users with disabilities</strong>, making it harder for them to interact with everyday digital interfaces.
+        </p>
+    </div>
+
+    <div class="reflection-box">
+        <p>
+            My redesign <strong>balances usability across all input methods (mouse, keyboard, and screen reader)</strong> by ensuring that 
+            <strong>every interaction—whether clicking, tapping, or navigating with a keyboard—feels intuitive and seamless for all users</strong>.
+        </p>
+    </div>
+</div>
+
+</div>
+
+    <script src="index.js"></script> <!-- ✅ Linked JS file -->
+</body>
+</html>
