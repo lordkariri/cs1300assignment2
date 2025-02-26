@@ -7,15 +7,79 @@ body {
 }
 
 
-
-/* Make title section a flex container */
-#title {
+.close-btn {
+    position: relative;
+    top: 25px; /* Adjust as needed */
+    left: 5px; /* Move it to the right */
+    background-color: #134B17;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
     display: flex;
-    align-items: center; /* Keep elements aligned */
-    gap: 10px; /* Adds spacing between title and button */
+    align-items: center;
+    justify-content: center;
 }
 
-/* Optional: If the button is too far, reduce or remove margin-left */
+
+.close-btn:hover {
+    background-color: 75DA6E;
+}
+
+
+#left-images, #right-images {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px; 
+    flex: 1; 
+    align-items: flex-start; 
+    padding-left: 10px; 
+}
+#left-images {
+    position: absolute; 
+    left: 7%; 
+    top: 60%;
+    display: flex;
+    flex-direction: column; 
+    gap: 45px; 
+    align-items: flex-start; 
+    padding-left: 10px; 
+} 
+
+#right-images {
+    position: absolute; 
+    right: 7%; 
+    top: 62%; 
+    display: flex;
+    flex-direction: column; 
+    gap: 45px;  
+    align-items: flex-start; 
+    padding-left: 10px; 
+} 
+
+
+
+
+
+#left-images img, #right-images img {
+    width: 120px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+#title {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+
 #action-button {
     background-color: #134B17;
     color: white;
@@ -25,7 +89,8 @@ body {
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s;
-    margin-left: 40px;
+    margin-left: 45px;
+    margin-top: 35px;
 }
 
 #action-button:hover {
@@ -99,7 +164,7 @@ p {
     background-color: white;
 }
 
-/* Skill Box Adjustments */
+
 #skills-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -120,7 +185,7 @@ p {
     font-size: 12px;
 }
 
-/* Sidebar - Open by default */
+
 #sidebar {
     width: 250px;
     height: 100vh;
@@ -133,12 +198,12 @@ p {
     transition: transform 0.3s ease-in-out;
 }
 
-/* When sidebar is closed */
+
 #sidebar.hidden {
-    transform: translateX(-250px); /* Moves sidebar off-screen smoothly */
+    transform: translateX(-250px); 
 }
 
-/* Sidebar Toggle Button */
+
 #sidebar-toggle {
     position: fixed;
     top: 15px;
@@ -148,10 +213,10 @@ p {
     background: none;
     border: none;
     color: black;
-    z-index: 1000; /* Keeps it on top */
+    z-index: 1000; 
 }
 
-/* Close Button inside Sidebar */
+
 #close-sidebar {
     background: none;
     border: none;
@@ -263,13 +328,13 @@ p {
     margin-bottom: 8px;
 }
 
-/* New Part 3.5 Section Styling */
+
 #redesign-section {
     margin-top: 50px;
     padding: 20px;
 }
 
-/* Title & Text Formatting */
+
 #redesign-section h2 {
     font-size: 28px;
     font-weight: bold;
@@ -288,7 +353,7 @@ p {
     margin-bottom: 20px;
 }
 
-/* Grid Layout for Information Boxes */
+
 #redesign-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two columns */
@@ -304,59 +369,59 @@ p {
     font-size: 14px;
 }
 
-/* Main Image Container - Ensures No Overlapping */
+
 #redesign-images {
     display: flex;
-    justify-content: center; /* Keeps images aligned */
-    align-items: flex-start; /* Ensures alignment */
-    gap: 40px; /* Space between left and right images */
+    justify-content: center; 
+    align-items: flex-start; 
+    gap: 40px; 
     margin-top: 20px;
-    flex-wrap: nowrap; /* Prevents stacking unless on mobile */
-    width: 100%; /* Allows full expansion */
+    flex-wrap: nowrap; 
+    width: 100%; 
 }
 
-/* Left Image (Large Image - Diagram 5) */
+
 .redesign-left {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%; /* Allows it to scale */
+    width: 100%; 
 }
 
 .redesign-left img {
-    width: 120%; /* Makes the image larger */
-    max-width: 700px; /* Ensures it doesn't shrink */
-    height: auto; /* Keeps aspect ratio */
+    width: 120%; 
+    max-width: 700px; 
+    height: auto; 
     border-radius: 6px;
 }
 
-/* Right Side (Stacked Images - Diagrams 3 & 4) */
+
 .redesign-right {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Space between stacked images */
+    gap: 20px; 
     align-items: center;
     width: 100%;
 }
 
 .redesign-right img {
-    width: 120%; /* Makes images larger */
-    max-width: 500px; /* Ensures proper scaling */
-    height: auto; /* Keeps aspect ratio */
+    width: 120%; 
+    max-width: 500px; 
+    height: auto; 
     border-radius: 6px;
 }
 
 /* 🔄 Responsive Fix for Smaller Screens */
 @media screen and (max-width: 900px) {
     #redesign-images {
-        flex-direction: column; /* Stack images on mobile */
+        flex-direction: column; 
         align-items: center;
     }
 
     .redesign-left img, .redesign-right img {
-        width: 100%; /* Allow them to scale properly */
-        max-width: 100%; /* Avoid exceeding container */
+        width: 100%; 
+        max-width: 100%; 
     }
 }
